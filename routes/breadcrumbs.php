@@ -488,6 +488,87 @@ try {
         }
     );
 
+        // CUSTOMERS
+        Breadcrumbs::for(
+            'customers.index',
+            static function (Generator $breadcrumbs) {
+                $breadcrumbs->parent('home');
+                $breadcrumbs->push(trans('firefly.customers'), route('customers.index'));
+            }
+        );
+        Breadcrumbs::for(
+            'customers.create',
+            static function (Generator $breadcrumbs) {
+                $breadcrumbs->parent('customers.index');
+                $breadcrumbs->push(trans('firefly.new_customer'), route('customers.create'));
+            }
+        );
+    
+        Breadcrumbs::for(
+            'customers.edit',
+            static function (Generator $breadcrumbs, Category $customer) {
+                $breadcrumbs->parent('customers.show.all', $customer);
+                $breadcrumbs->push(trans('firefly.edit_customer', ['name' => limitStringLength($customer->name)]), route('customers.edit', [$customer->id]));
+            }
+        );
+        Breadcrumbs::for(
+            'customers.delete',
+            static function (Generator $breadcrumbs, Category $customer) {
+                $breadcrumbs->parent('customers.show', $customer);
+                $breadcrumbs->push(trans('firefly.delete_customer', ['name' => limitStringLength($customer->name)]), route('customers.delete', [$customer->id]));
+            }
+        );
+    
+        Breadcrumbs::for(
+            'customers.show',
+            static function (Generator $breadcrumbs, Category $customer, Carbon $start = null, Carbon $end = null) {
+                $breadcrumbs->parent('customers.index');
+                $breadcrumbs->push(limitStringLength($customer->name), route('customers.show', [$customer->id]));
+                if (null !== $start && null !== $end) {
+                    $title = trans(
+                        'firefly.between_dates_breadcrumb',
+                        ['start' => $start->formatLocalized((string)trans('config.month_and_day')),
+                         'end'   => $end->formatLocalized((string)trans('config.month_and_day')),]
+                    );
+                    $breadcrumbs->push($title, route('customers.show', [$customer->id]));
+                }
+            }
+        );
+    
+        Breadcrumbs::for(
+            'customers.show.all',
+            static function (Generator $breadcrumbs, Category $customer) {
+                $breadcrumbs->parent('customers.index');
+                $breadcrumbs->push(limitStringLength($customer->name), route('customers.show', [$customer->id]));
+                $breadcrumbs->push(trans('firefly.everything'), route('customers.show.all', [$customer->id]));
+            }
+        );
+    
+        Breadcrumbs::for(
+            'customers.no-customer',
+            static function (Generator $breadcrumbs, Carbon $start = null, Carbon $end = null) {
+                $breadcrumbs->parent('customers.index');
+                $breadcrumbs->push(trans('firefly.journals_without_customer'), route('customers.no-customer'));
+                if (null !== $start && null !== $end) {
+                    $title = trans(
+                        'firefly.between_dates_breadcrumb',
+                        ['start' => $start->formatLocalized((string)trans('config.month_and_day')),
+                         'end'   => $end->formatLocalized((string)trans('config.month_and_day')),]
+                    );
+                    $breadcrumbs->push($title, route('customers.no-customer'));
+                }
+            }
+        );
+    
+        Breadcrumbs::for(
+            'customers.no-customer.all',
+            static function (Generator $breadcrumbs) {
+                $breadcrumbs->parent('customers.index');
+                $breadcrumbs->push(trans('firefly.journals_without_customer'), route('customers.no-customer'));
+                $breadcrumbs->push(trans('firefly.everything'), route('customers.no-category.all'));
+            }
+        );
+
     // CATEGORIES
     Breadcrumbs::for(
         'categories.index',

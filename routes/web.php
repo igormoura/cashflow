@@ -331,6 +331,38 @@ Route::group(
 );
 
 /**
+ * Customer Controller.
+ */
+Route::group(
+    ['middleware' => 'user-full-auth', 'namespace' => 'FireflyIII\Http\Controllers', 'prefix' => 'customers', 'as' => 'customers.'],
+    static function () {
+
+    // index:
+        Route::get('', ['uses' => 'Customer\IndexController@index', 'as' => 'index']);
+
+        // create
+        Route::get('create', ['uses' => 'Customer\CreateController@create', 'as' => 'create']);
+        Route::post('store', ['uses' => 'Customer\CreateController@store', 'as' => 'store']);
+
+        // edit
+        Route::get('edit/{customer}', ['uses' => 'Customer\EditController@edit', 'as' => 'edit']);
+        Route::post('update/{customer}', ['uses' => 'Customer\EditController@update', 'as' => 'update']);
+
+        // delete
+        Route::get('delete/{customer}', ['uses' => 'Customer\DeleteController@delete', 'as' => 'delete']);
+        Route::post('destroy/{customer}', ['uses' => 'Customer\DeleteController@destroy', 'as' => 'destroy']);
+
+        // show customer:
+        Route::get('show/{customer}/all', ['uses' => 'Customer\ShowController@showAll', 'as' => 'show.all']);
+        Route::get('show/{customer}/{start_date?}/{end_date?}', ['uses' => 'Customer\ShowController@show', 'as' => 'show']);
+
+        // no category controller:
+        Route::get('list/no-customer/all', ['uses' => 'Customer\NoCustomerController@showAll', 'as' => 'no-category.all']);
+        Route::get('list/no-customer/{start_date?}/{end_date?}', ['uses' => 'Customer\NoCustomerController@show', 'as' => 'no-category']);
+    }
+);
+
+/**
  * Currency Controller.
  */
 Route::group(

@@ -84,6 +84,7 @@ return [
         FireflyIII\Providers\BillServiceProvider::class,
         FireflyIII\Providers\BudgetServiceProvider::class,
         FireflyIII\Providers\CategoryServiceProvider::class,
+        FireflyIII\Providers\CustomerServiceProvider::class,
         FireflyIII\Providers\CurrencyServiceProvider::class,
         FireflyIII\Providers\FireflyServiceProvider::class,
         FireflyIII\Providers\JournalServiceProvider::class,

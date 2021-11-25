@@ -1184,6 +1184,22 @@ return [
     'stored_category'                           => 'Armazenada nova categoria ":name"',
     'without_category_between'                  => 'Sem categoria entre :start e :end',
 
+    // costumer:
+    'new_costumer'                              => 'Novo Cliente',
+    'create_new_costumer'                       => 'Criar novo cliente ',
+    'update_costumer'                           => 'Atualizar cliente',
+    'updated_costumer'                          => 'Cliente ":name" atualizado',
+    'customers'                                 => 'Clientes',
+    'edit_costumer'                             => 'Editar cliente ":name"',
+    'no_costumer'                               => '(sem cliente)',
+    'costumers'                                 => 'Clientes',
+    'costumer'                                  => 'Cliente',
+    'delete_costumer'                           => 'Apagar cliente ":name"',
+    'deleted_costumer'                          => 'Cliente ":name" apagado',
+    'store_costumer'                            => 'Gravar cliente',
+    'stored_costumer'                           => 'Cliente ":name" gravado',
+    'without_costumer_between'                  => 'Sem cliente entre :start e :end',
+
     // transactions:
     'update_withdrawal'                         => 'Atualizar retirada',
     'update_deposit'                            => 'Atualizar de depósito',

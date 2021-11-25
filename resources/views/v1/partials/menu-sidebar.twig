@@ -157,6 +157,13 @@
         </ul>
     </li>
 
+    <li class="{{ activeRoutePartial('customers') }}" id="customer-menu">
+        <a href="{{ route('customers.create') }}">
+            <span class="fa fa-users fa-fw"></span>
+            <span>{{ 'customers'|_ }}</span>
+        </a>
+    </li>
+
     <li class="{{ activeRoutePartial('reports') }}" id="report-menu">
         <a href="{{ route('reports.index') }}">
             <span class="fa fa-bar-chart fa-fw"></span>

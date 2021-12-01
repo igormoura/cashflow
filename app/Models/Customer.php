@@ -44,6 +44,18 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  * @property \Illuminate\Support\Carbon|null      $deleted_at
  * @property int                                  $user_id
  * @property string                               $name
+ * @property string                               $email
+ * @property string                               $birthDate
+ * @property string                               $gender
+ * @property string                               $document
+ * @property string                               $telephone
+ * @property string                               $cellphone
+ * @property string                               $address
+ * @property string                               $addressNumber
+ * @property string                               $addressComplement
+ * @property string                               $zipCode
+ * @property string                               $state
+ * @property string                               $city
  * @property Carbon                               $lastActivity
  * @property bool                                 $encrypted
  * @property-read Collection|Attachment[]         $attachments
@@ -89,7 +101,7 @@ class Customer extends Model
             'encrypted'  => 'boolean',
         ];
     /** @var array Fields that can be filled */
-    protected $fillable = ['user_id', 'name'];
+    protected $fillable = ['user_id', 'name', 'email', 'celphone'];
     /** @var array Hidden from view */
     protected $hidden = ['encrypted'];
 

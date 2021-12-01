@@ -1,0 +1,47 @@
+<div style="padding-left:8px;">
+    {{ customers.links('v1.pagination.bootstrap-4')|raw }}
+</div>
+<table class="table table-hover sortable">
+    <thead>
+    <tr>
+        <th data-defaultsort="disabled">&nbsp;</th>
+        <th data-defaultsign="az">{{ trans('list.name') }}</th>
+        <th data-defaultsign="month" class="hidden-sm hidden-xs">{{ trans('list.lastActivity') }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>&nbsp;</td>
+        <td><a href="{{ route('customers.no-customer') }}"><em>{{ 'without_customer'|_ }}</em></a></td>
+        <td class="hidden-sm hidden-xs">&nbsp;</td>
+    </tr>
+    {% for customer in customers %}
+        <tr>
+            <td>
+                <div class="btn-group btn-group-xs">
+                    <a href="{{ route('customers.edit', customer.id) }}" class="btn btn-default btn-xs"><span class="fa fa-fw fa-pencil"></span></a>
+                    <a href="{{ route('customers.delete', customer.id) }}" class="btn btn-danger btn-xs"><span class="fa fa-fw fa-trash-o"></span></a>
+                </div>
+            </td>
+            <td data-value="{{ customer.name }}">
+                <a href="{{ route('customers.show', customer.id) }}" title="{{ customer.name }}">{{ customer.name }}</a>
+                {% if customer.attachments.count() > 0 %}
+                    <span class="fa fa-fw fa-paperclip"></span>
+                {% endif %}
+            </td>
+            {% if customer.lastActivity %}
+                <td class="hidden-sm hidden-xs" data-value="{{ customer.lastActivity.format('Y-m-d H-i-s') }}">
+                    {{ customer.lastActivity.formatLocalized(monthAndDayFormat) }}
+                </td>
+            {% else %}
+                <td class="hidden-sm hidden-xs" data-value="0000-00-00 00-00-00">
+                    <em>{{ 'never'|_ }}</em>
+                </td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<div style="padding-left:8px;">
+    {{ customers.links('v1.pagination.bootstrap-4')|raw }}
+</div>

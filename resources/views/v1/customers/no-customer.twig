@@ -10,7 +10,7 @@
     {% if periods|length > 0 %}
         <div class="row">
             <div class="col-lg-offset-10 col-lg-2 col-md-offset-9 col-md-3 col-sm-12 col-xs-12">
-                <p class="small text-center"><a href="{{ route('categories.no-category.all') }}">{{ 'showEverything'|_ }}</a></p>
+                <p class="small text-center"><a href="{{ route('customers.no-customer.all') }}">{{ 'showEverything'|_ }}</a></p>
             </div>
         </div>
     {% endif %}
@@ -27,13 +27,13 @@
                         {% include 'v1.list.groups' %}
                         <p>
                             <span class="fa fa-calendar"></span>
-                            <a href="{{ route('categories.no-category.all') }}">{{ 'show_all_no_filter'|_ }}</a>
+                            <a href="{{ route('customers.no-customer.all') }}">{{ 'show_all_no_filter'|_ }}</a>
                         </p>
                     {% else %}
                         {% include 'v1.list.groups' %}
                         <p>
                             <span class="fa fa-calendar"></span>
-                            <a href="{{ route('categories.no-category') }}">{{ 'show_the_current_period_and_overview'|_ }}</a>
+                            <a href="{{ route('customers.no-customer') }}">{{ 'show_the_current_period_and_overview'|_ }}</a>
                         </p>
                     {% endif %}
                 </div>
@@ -52,7 +52,7 @@
     {% if periods|length > 0 %}
         <div class="row">
             <div class="col-lg-offset-10 col-lg-2 col-md-offset-9 col-md-3 col-sm-12 col-xs-12">
-                <p class="small text-center"><a href="{{ route('categories.no-category',['all']) }}">{{ 'showEverything'|_ }}</a></p>
+                <p class="small text-center"><a href="{{ route('customers.no-customer',['all']) }}">{{ 'showEverything'|_ }}</a></p>
             </div>
         </div>
     {% endif %}

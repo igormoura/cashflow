@@ -5,17 +5,17 @@
 {% endblock %}
 
 {% block content %}
-    {% if categories.count() > 0 %}
+    {% if customers.count() > 0 %}
 <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">{{ 'categories'|_ }}</h3>
+                <h3 class="box-title">{{ 'customers'|_ }}</h3>
                 <div class="box-tools pull-right">
                     <div class="btn-group">
                         <button class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown"><span class="fa fa-ellipsis-v"></span></button>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ route('categories.create') }}"><span class="fa fa-plus fa-fw"></span> {{ 'new_category'|_ }}</a></li>
+                            <li><a href="{{ route('customers.create') }}"><span class="fa fa-plus fa-fw"></span> {{ 'new_customer'|_ }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -23,19 +23,19 @@
             </div>
             <div class="box-body no-padding">
                 <div style="padding:8px;">
-                    <a class="btn btn-success" href="{{ route('categories.create') }}"><span class="fa fa-plus fa-fw"></span> {{ 'new_category'|_ }}</a>
+                    <a class="btn btn-success" href="{{ route('customers.create') }}"><span class="fa fa-plus fa-fw"></span> {{ 'new_customer'|_ }}</a>
                 </div>
-                {% include 'v1.list/categories' %}
+                {% include 'v1.list/customers' %}
             </div>
             <div class="box-footer">
-                <a class="btn btn-success" href="{{ route('categories.create') }}"><span class="fa fa-plus fa-fw"></span> {{ 'new_category'|_ }}</a>
+                <a class="btn btn-success" href="{{ route('customers.create') }}"><span class="fa fa-plus fa-fw"></span> {{ 'new_customer'|_ }}</a>
             </div>
         </div>
 
     </div>
 </div>
 {% else %}
-        {% include 'v1.partials.empty' with {objectType: 'default', type: 'categories',route: route('categories.create')} %}
+        {% include 'v1.partials.empty' with {objectType: 'default', type: 'customers',route: route('customers.create')} %}
     {% endif %}
 {% endblock %}
 
@@ -45,5 +45,5 @@
 
 {% block scripts %}
     <script type="text/javascript" src="v1/js/lib/bootstrap-sortable.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
-    <script type="text/javascript" src="v1/js/ff/categories/index.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
+    <script type="text/javascript" src="v1/js/ff/customers/index.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
 {% endblock %}

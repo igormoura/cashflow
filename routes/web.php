@@ -356,9 +356,9 @@ Route::group(
         Route::get('show/{customer}/all', ['uses' => 'Customer\ShowController@showAll', 'as' => 'show.all']);
         Route::get('show/{customer}/{start_date?}/{end_date?}', ['uses' => 'Customer\ShowController@show', 'as' => 'show']);
 
-        // no category controller:
-        Route::get('list/no-customer/all', ['uses' => 'Customer\NoCustomerController@showAll', 'as' => 'no-category.all']);
-        Route::get('list/no-customer/{start_date?}/{end_date?}', ['uses' => 'Customer\NoCustomerController@show', 'as' => 'no-category']);
+        // no customer controller:
+        Route::get('list/no-customer/all', ['uses' => 'Customer\NoCustomerController@showAll', 'as' => 'no-customer.all']);
+        Route::get('list/no-customer/{start_date?}/{end_date?}', ['uses' => 'Customer\NoCustomerController@show', 'as' => 'no-customer']);
     }
 );
 

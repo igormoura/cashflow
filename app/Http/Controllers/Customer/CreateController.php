@@ -72,6 +72,7 @@ class CreateController extends Controller
      */
     public function create(Request $request)
     {
+
         if (true !== session('customers.create.fromStore')) {
             $this->rememberPreviousUri('customers.create.uri');
         }

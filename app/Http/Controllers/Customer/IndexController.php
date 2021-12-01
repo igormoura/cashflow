@@ -26,7 +26,7 @@ namespace FireflyIII\Http\Controllers\Customer;
 use FireflyIII\Exceptions\FireflyException;
 use FireflyIII\Http\Controllers\Controller;
 use FireflyIII\Models\Customer;
-use FireflyIII\Repositories\Customer\ConsumerRepositoryInterface;
+use FireflyIII\Repositories\Customer\CustomerRepositoryInterface;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -38,11 +38,11 @@ use Illuminate\View\View;
  */
 class IndexController extends Controller
 {
-    /** @var ConsumerRepositoryInterface The customer repository */
+    /** @var CostumerRepositoryInterface The customer repository */
     private $repository;
 
     /**
-     * ConsumerController constructor.
+     * CustomerController constructor.
      *
      * @codeCoverageIgnore
      */
@@ -54,7 +54,7 @@ class IndexController extends Controller
             function ($request, $next) {
                 app('view')->share('title', (string)trans('firefly.customers'));
                 app('view')->share('mainTitleIcon', 'fa-bookmark');
-                $this->repository = app(ConsumerRepositoryInterface::class);
+                $this->repository = app(CustomerRepositoryInterface::class);
 
                 return $next($request);
             }
@@ -73,7 +73,7 @@ class IndexController extends Controller
     {
         $page       = 0 === (int)$request->get('page') ? 1 : (int)$request->get('page');
         $pageSize   = (int)app('preferences')->get('listPageSize', 50)->data;
-        $collection = $this->repository->getConsumers();
+        $collection = $this->repository->getCustomers();
         $total      = $collection->count();
         $collection = $collection->slice(($page - 1) * $pageSize, $pageSize);
 

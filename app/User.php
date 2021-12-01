@@ -34,6 +34,7 @@ use FireflyIII\Models\Bill;
 use FireflyIII\Models\Budget;
 use FireflyIII\Models\Category;
 use FireflyIII\Models\CurrencyExchangeRate;
+use FireflyIII\Models\Customer;
 use FireflyIII\Models\GroupMembership;
 use FireflyIII\Models\ObjectGroup;
 use FireflyIII\Models\PiggyBank;
@@ -88,6 +89,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  * @property-read \Illuminate\Database\Eloquent\Collection|Bill[]                 $bills
  * @property-read \Illuminate\Database\Eloquent\Collection|Budget[]               $budgets
  * @property-read \Illuminate\Database\Eloquent\Collection|Category[]             $categories
+ * @property-read \Illuminate\Database\Eloquent\Collection|Category[]             $customers
  * @property-read \Illuminate\Database\Eloquent\Collection|Client[]               $clients
  * @property-read \Illuminate\Database\Eloquent\Collection|CurrencyExchangeRate[] $currencyExchangeRates
  * @property-read DatabaseNotificationCollection|DatabaseNotification[]           $notifications
@@ -273,6 +275,17 @@ class User extends Authenticatable
     public function categories(): HasMany
     {
         return $this->hasMany(Category::class);
+    }
+
+    /**
+     * @codeCoverageIgnore
+     * Link to customers
+     *
+     * @return HasMany
+     */
+    public function customers(): HasMany
+    {
+        return $this->hasMany(Customer::class);
     }
 
     /**

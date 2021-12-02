@@ -1,12 +1,12 @@
 {% extends './v1/layout/default' %}
 
 {% block breadcrumbs %}
-    {{ Breadcrumbs.render(Route.getCurrentRoute.getName, category) }}
+    {{ Breadcrumbs.render(Route.getCurrentRoute.getName, customer) }}
 {% endblock %}
 
 {% block content %}
-    {{ Form.model(category, {'class' : 'form-horizontal','enctype': 'multipart/form-data','id' : 'update','url' : route('categories.update',category.id)}) }}
-    <input type="hidden" name="id" value="{{ category.id }}"/>
+    {{ Form.model(customer, {'class' : 'form-horizontal','enctype': 'multipart/form-data','id' : 'update','url' : route('customers.update',customer.id)}) }}
+    <input type="hidden" name="id" value="{{ customer.id }}"/>
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="box box-primary">
@@ -41,11 +41,11 @@
                     <h3 class="box-title">{{ 'options'|_ }}</h3>
                 </div>
                 <div class="box-body">
-                    {{ ExpandedForm.optionsList('update','category') }}
+                    {{ ExpandedForm.optionsList('update','customer') }}
                 </div>
                 <div class="box-footer">
                     <button type="submit" class="btn pull-right btn-success">
-                        {{ 'update_category'|_ }}
+                        {{ 'update_customer'|_ }}
                     </button>
                 </div>
             </div>
@@ -54,5 +54,5 @@
     </form>
 {% endblock %}
 {% block scripts %}
-    <script type="text/javascript" src="v1/js/ff/categories/edit.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
+    <script type="text/javascript" src="v1/js/ff/customers/edit.js?v={{ FF_VERSION }}" nonce="{{ JS_NONCE }}"></script>
 {% endblock %}

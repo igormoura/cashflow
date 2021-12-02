@@ -1187,6 +1187,7 @@ return [
     // costumer:
     'new_customer'                              => 'Novo Cliente',
     'create_new_customer'                       => 'Criar novo cliente ',
+    'without_customer'                          => 'Sem um cliente',
     'update_customer'                           => 'Atualizar cliente',
     'updated_customer'                          => 'Cliente ":name" atualizado',
     'customers'                                 => 'Clientes',

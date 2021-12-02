@@ -64,7 +64,7 @@ class SecureHeaders
 
         $route = $request->route();
         if (null !== $route && 'oauth/authorize' !== $route->uri) {
-            $csp[] = "form-action 'self' https://heroku-clashflow-app.herokuapp.com 'unsafe-inline' 'unsafe-eval'";
+            $csp[] = "form-action 'self' 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'";
         }
 
         $featurePolicies = [

@@ -1201,6 +1201,7 @@ return [
     'stored_customer'                           => 'Cliente ":name" gravado',
     'without_customer_between'                  => 'Sem cliente entre :start e :end',
     'cellphone'                                 => 'Celular',
+    'address'                                   => 'Endereço',
 
     // transactions:
     'update_withdrawal'                         => 'Atualizar retirada',

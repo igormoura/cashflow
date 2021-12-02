@@ -244,4 +244,12 @@ return [
     'submitted'                   => 'Enviado',
     'key'                         => 'Chave',
     'value'                       => 'Conteúdo do registro',
+    'cellphone'                   => 'Celular',
+    'gender'                      => 'Sexo',
+    'address'                     => 'Endereço',
+    'zipCode'                     => 'CEP',
+    'state'                       => 'Estado',
+    'city'                        => 'Cidade',
+    'addressNumber'               => 'Numero',
+    'addressComplement'           => 'Complemento',
 ];

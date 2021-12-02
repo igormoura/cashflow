@@ -623,7 +623,7 @@ return [
     'without_date'                              => '不含日期',
     'result'                                    => '结果',
     'sums_apply_to_range'                       => '所有总和均应用至所选范围',
-    'mapbox_api_key'                            => '若要使用地图，请从 <a href="https://www.mapbox.com/">Mapbox</a> 获取 API 密钥。打开 <code>.env.local</code> 文件并在 <code>MAPBOX_API_KEY=</code> 后输入密钥。',
+    'mapbox_api_key'                            => '若要使用地图，请从 <a href="https://www.mapbox.com/">Mapbox</a> 获取 API 密钥。打开 <code>.env</code> 文件并在 <code>MAPBOX_API_KEY=</code> 后输入密钥。',
     'press_object_location'                     => '右键单击或长按设置对象的位置。',
     'clear_location'                            => '清除位置',
     'delete_all_selected_tags'                  => '删除所有选中的标签',

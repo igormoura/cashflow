@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Без дата',
     'result'                                    => 'Резултат',
     'sums_apply_to_range'                       => 'Всички суми се отнасят към избрания диапазон',
-    'mapbox_api_key'                            => 'За да използвате карта, вземете API ключ от <a href="https://www.mapbox.com/"> Mapbox </a>. Отворете вашия <code>.env.local </code> файл и въведете този код след <code> MAPBOX_API_KEY = </code>.',
+    'mapbox_api_key'                            => 'За да използвате карта, вземете API ключ от <a href="https://www.mapbox.com/"> Mapbox </a>. Отворете вашия <code>.env </code> файл и въведете този код след <code> MAPBOX_API_KEY = </code>.',
     'press_object_location'                     => 'Щракнете с десния бутон или натиснете дълго, за да зададете местоположението на обекта.',
     'clear_location'                            => 'Изчисти местоположението',
     'delete_all_selected_tags'                  => 'Изтрий всички избрани етикети',

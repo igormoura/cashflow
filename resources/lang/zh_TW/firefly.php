@@ -623,7 +623,7 @@ return [
     'without_date'                              => '不含日期',
     'result'                                    => '結果',
     'sums_apply_to_range'                       => '所有總和均套用至所選範圍',
-    'mapbox_api_key'                            => '若要使用地圖，請自 <a href="https://www.mapbox.com/">Mapbox</a> 獲得一組 API 金鑰。開啟您的 <code>.env.local</code> 檔案並於 <code>MAPBOX_API_KEY=</code> 句後輸入金鑰代碼。',
+    'mapbox_api_key'                            => '若要使用地圖，請自 <a href="https://www.mapbox.com/">Mapbox</a> 獲得一組 API 金鑰。開啟您的 <code>.env</code> 檔案並於 <code>MAPBOX_API_KEY=</code> 句後輸入金鑰代碼。',
     'press_object_location'                     => 'Right click or long press to set the object\'s location.',
     'clear_location'                            => '清除位置',
     'delete_all_selected_tags'                  => 'Delete all selected tags',

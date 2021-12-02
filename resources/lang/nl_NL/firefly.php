@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Zonder datum',
     'result'                                    => 'Resultaat',
     'sums_apply_to_range'                       => 'Alle sommen gelden voor het geselecteerde bereik',
-    'mapbox_api_key'                            => 'Om de kaart te gebruiken regel je een API-key bij <a href="https://www.mapbox.com/">Mapbox</a>. Open je <code>.env.local</code>-bestand en zet deze achter <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'Om de kaart te gebruiken regel je een API-key bij <a href="https://www.mapbox.com/">Mapbox</a>. Open je <code>.env</code>-bestand en zet deze achter <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Klik met de rechtermuisknop of druk lang om de locatie van het object in te stellen.',
     'clear_location'                            => 'Wis locatie',
     'delete_all_selected_tags'                  => 'Alle geselecteerde tags verwijderen',

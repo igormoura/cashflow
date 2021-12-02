@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Không có ngày',
     'result'                                    => 'Kết quả',
     'sums_apply_to_range'                       => 'Tất cả các khoản tiền áp dụng cho phạm vi đã chọn',
-    'mapbox_api_key'                            => 'Để sử dụng bản đồ, hãy lấy khóa API từ <a href="https://www.mapbox.com/">Mapbox</a>. Open your <code>.env.local</code> tập tin và nhập mã này sau <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'Để sử dụng bản đồ, hãy lấy khóa API từ <a href="https://www.mapbox.com/">Mapbox</a>. Open your <code>.env</code> tập tin và nhập mã này sau <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Nhấp chuột phải hoặc nhấn lâu để đặt vị trí của đối tượng.',
     'clear_location'                            => 'Xóa vị trí',
     'delete_all_selected_tags'                  => 'Xóa tất cả các nhãn đã chọn',

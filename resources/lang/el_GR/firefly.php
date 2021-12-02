@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Χωρίς ημερομηνία',
     'result'                                    => 'Αποτέλεσμα',
     'sums_apply_to_range'                       => 'Όλα τα σύνολα αφορούν το συγκεκριμένο εύρος',
-    'mapbox_api_key'                            => 'Για τη χρήση χάρτη, λάβετε ένα κλειδί API από <a href="https://www.mapbox.com/">Mapbox</a>. Ανοίξτε το <code>.env.local</code> αρχείο σας και εισάγετε αυτόν τον κωδικό στο <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'Για τη χρήση χάρτη, λάβετε ένα κλειδί API από <a href="https://www.mapbox.com/">Mapbox</a>. Ανοίξτε το <code>.env</code> αρχείο σας και εισάγετε αυτόν τον κωδικό στο <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Κάντε δεξί κλικ ή πιέστε παρατεταμένα για να ορίσετε την τοποθεσία του αντικειμένου.',
     'clear_location'                            => 'Εκκαθάριση τοποθεσίας',
     'delete_all_selected_tags'                  => 'Διαγραφή όλων των επιλεγμένων ετικετών',

@@ -623,7 +623,7 @@ return [
     'without_date'                              => '日付なし',
     'result'                                    => '結果',
     'sums_apply_to_range'                       => '選択した範囲にすべての合計が適用されます',
-    'mapbox_api_key'                            => '地図を使うには <a href="https://www.mapbox.com/">Mapbox</a> のAPIキーを取得してください。<code>.env.local</code>ファイルを開き、<code>MAPBOX_API_KEY=</code>のうしろにAPIキーを入力してください。',
+    'mapbox_api_key'                            => '地図を使うには <a href="https://www.mapbox.com/">Mapbox</a> のAPIキーを取得してください。<code>.env</code>ファイルを開き、<code>MAPBOX_API_KEY=</code>のうしろにAPIキーを入力してください。',
     'press_object_location'                     => '対象の位置を設定するには、右クリックまたは長押しします。',
     'clear_location'                            => '場所',
     'delete_all_selected_tags'                  => '選択したすべてのタグを削除',

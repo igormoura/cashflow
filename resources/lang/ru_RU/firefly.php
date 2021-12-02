@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Без даты',
     'result'                                    => 'Результат',
     'sums_apply_to_range'                       => 'Все суммы относятся к выбранному диапазону',
-    'mapbox_api_key'                            => 'Чтобы использовать карту, получите ключ API от сервиса <a href="https://www.mapbox.com/">Mapbox</a>. Откройте файл <code>.env.local</code> и введите этот код в строке <code>MAPBOX_API_KEY = </code>.',
+    'mapbox_api_key'                            => 'Чтобы использовать карту, получите ключ API от сервиса <a href="https://www.mapbox.com/">Mapbox</a>. Откройте файл <code>.env</code> и введите этот код в строке <code>MAPBOX_API_KEY = </code>.',
     'press_object_location'                     => 'Щёлкните правой кнопкой мыши или надолго нажмите на сенсорный экран, чтобы установить местоположение объекта.',
     'clear_location'                            => 'Очистить местоположение',
     'delete_all_selected_tags'                  => 'Удалить все выбранные метки',

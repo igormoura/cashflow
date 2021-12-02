@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Dátum nélkül',
     'result'                                    => 'Eredmény',
     'sums_apply_to_range'                       => 'Minden összeg alkalmazása a kiválasztott tartományra',
-    'mapbox_api_key'                            => 'A térkép használatához be kell szerezni egy API kulcsot a <a href="https://www.mapbox.com/">Mapbox</a> oldalról. A kódot a <code>.env</code> fájlba, a <code>MAPBOX_API_KEY = </code> után kell beírni.',
+    'mapbox_api_key'                            => 'A térkép használatához be kell szerezni egy API kulcsot a <a href="https://www.mapbox.com/">Mapbox</a> oldalról. A kódot a <code>.env.local</code> fájlba, a <code>MAPBOX_API_KEY = </code> után kell beírni.',
     'press_object_location'                     => 'Jobb kattintással vagy az egérgomb hosszan nyomva tartásával lehet beállítani az objektum helyét.',
     'clear_location'                            => 'Hely törlése',
     'delete_all_selected_tags'                  => 'Minden kiválasztott címke törlése',

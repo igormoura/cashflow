@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Bez data',
     'result'                                    => 'Výsledek',
     'sums_apply_to_range'                       => 'Všechny součty se vztahují na vybraný rozsah',
-    'mapbox_api_key'                            => 'Pro použití mapy, získejte klíč k aplikačnímu programovému rozhraní <a href="https://www.mapbox.com/">Mapbox</a>. Otevřete soubor <code>.env</code> a tento kód zadejte za <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'Pro použití mapy, získejte klíč k aplikačnímu programovému rozhraní <a href="https://www.mapbox.com/">Mapbox</a>. Otevřete soubor <code>.env.local</code> a tento kód zadejte za <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Right click or long press to set the object\'s location.',
     'clear_location'                            => 'Vymazat umístění',
     'delete_all_selected_tags'                  => 'Delete all selected tags',

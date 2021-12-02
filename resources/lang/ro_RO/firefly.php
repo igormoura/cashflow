@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Fără data',
     'result'                                    => 'Rezultat',
     'sums_apply_to_range'                       => 'Toate sumele se aplică gamei selectate',
-    'mapbox_api_key'                            => 'Pentru a utiliza harta, obțineți o cheie API din <a href="https://www.mapbox.com/"> Mapbox </a>. Deschideți fișierul <code> .env </ code> și introduceți acest cod după <code> MAPBOX_API_KEY = </ code>.',
+    'mapbox_api_key'                            => 'Pentru a utiliza harta, obțineți o cheie API din <a href="https://www.mapbox.com/"> Mapbox </a>. Deschideți fișierul <code> .env.local </ code> și introduceți acest cod după <code> MAPBOX_API_KEY = </ code>.',
     'press_object_location'                     => 'Faceți clic dreapta sau apăsați lung pentru a seta locația obiectului.',
     'clear_location'                            => 'Ștergeți locația',
     'delete_all_selected_tags'                  => 'Şterge toate etichetele selectate',

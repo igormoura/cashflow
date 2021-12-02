@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Bez daty',
     'result'                                    => 'Wynik',
     'sums_apply_to_range'                       => 'Wszystkie sumy mają zastosowanie do wybranego zakresu',
-    'mapbox_api_key'                            => 'Aby użyć mapy, pobierz klucz API z <a href="https://www.mapbox.com/">Mapbox</a>. Otwórz plik <code>.env</code> i wprowadź ten kod po <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'Aby użyć mapy, pobierz klucz API z <a href="https://www.mapbox.com/">Mapbox</a>. Otwórz plik <code>.env.local</code> i wprowadź ten kod po <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Kliknij prawym przyciskiem myszy lub naciśnij i przytrzymaj aby ustawić lokalizację obiektu.',
     'clear_location'                            => 'Wyczyść lokalizację',
     'delete_all_selected_tags'                  => 'Usuń wszystkie zaznaczone tagi',

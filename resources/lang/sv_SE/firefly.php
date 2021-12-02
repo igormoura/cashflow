@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Utan datum',
     'result'                                    => 'Resultat',
     'sums_apply_to_range'                       => 'Alla summor gäller för valt intervall',
-    'mapbox_api_key'                            => 'För att använda karta, hämta en API nyckel från <a href="https://www.mapbox.com/">Mapbox</a>. Öppna din <code>.env</code> fil och ange koden efter <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'För att använda karta, hämta en API nyckel från <a href="https://www.mapbox.com/">Mapbox</a>. Öppna din <code>.env.local</code> fil och ange koden efter <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Högerklicka eller långtryck för att ställa in objektets plats.',
     'clear_location'                            => 'Rena plats',
     'delete_all_selected_tags'                  => 'Ta bort alla markerade etiketter',

@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Ilman päiväystä',
     'result'                                    => 'Tulos',
     'sums_apply_to_range'                       => 'Kaikki summat sisältyvät valittuun jaksoon',
-    'mapbox_api_key'                            => 'Käyttääksesi karttaa, hanki API-avain <a href="https://www.mapbox.com/">Mapboxilta</a>. Avaa <code>.env</code> tiedostosi ja lisää koodi <code>MAPBOX_API_KEY=</code> perään.',
+    'mapbox_api_key'                            => 'Käyttääksesi karttaa, hanki API-avain <a href="https://www.mapbox.com/">Mapboxilta</a>. Avaa <code>.env.local</code> tiedostosi ja lisää koodi <code>MAPBOX_API_KEY=</code> perään.',
     'press_object_location'                     => 'Oikealla hiiren napilla (tai pitkä painallus) voit asettaa paikkatiedon.',
     'clear_location'                            => 'Tyhjennä sijainti',
     'delete_all_selected_tags'                  => 'Poista kaikki valitut tägit',

@@ -12,8 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Copy .env
-        run: test -f .env || cp .ci/.env.ci .env
+      - name: Copy .env.local
+        run: test -f .env.local || cp .ci/.env.local.ci .env.local
       - name: Prepare dependencies
         run: |
           set -euxo pipefail
@@ -52,8 +52,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Copy .env
-        run: test -f .env || cp .ci/.env.ci .env
+      - name: Copy .env.local
+        run: test -f .env.local || cp .ci/.env.local.ci .env.local
       - name: Download database
         uses: actions/download-artifact@v2
         with:
@@ -87,8 +87,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Copy .env
-        run: test -f .env || cp .ci/.env.ci .env
+      - name: Copy .env.local
+        run: test -f .env.local || cp .ci/.env.local.ci .env.local
       - name: Download database
         uses: actions/download-artifact@v2
         with:
@@ -121,8 +121,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Copy .env
-        run: test -f .env || cp .ci/.env.ci .env
+      - name: Copy .env.local
+        run: test -f .env.local || cp .ci/.env.local.ci .env.local
       - name: Download database
         uses: actions/download-artifact@v2
         with:

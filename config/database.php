@@ -40,7 +40,7 @@ if (false !== $databaseUrl) {
 }
 
 /*
- * Get SSL parameters from .env file.
+ * Get SSL parameters from .env.local file.
  */
 $mysql_ssl_ca_dir  = envNonEmpty('MYSQL_SSL_CAPATH', null);
 $mysql_ssl_ca_file = envNonEmpty('MYSQL_SSL_CA', null);

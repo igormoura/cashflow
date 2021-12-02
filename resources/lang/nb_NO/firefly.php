@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Uten dato',
     'result'                                    => 'Resultat',
     'sums_apply_to_range'                       => 'Alle beløp gjelder for det valgte området',
-    'mapbox_api_key'                            => 'For å bruke kart, få en API-nøkkel fra <a href="https://www.mapbox.com/">Mapbox</a>. Åpne <code>.env</code> filen og angi denne koden etter <code>MAPBOX_API_KEY =</code>.',
+    'mapbox_api_key'                            => 'For å bruke kart, få en API-nøkkel fra <a href="https://www.mapbox.com/">Mapbox</a>. Åpne <code>.env.local</code> filen og angi denne koden etter <code>MAPBOX_API_KEY =</code>.',
     'press_object_location'                     => 'Right click or long press to set the object\'s location.',
     'clear_location'                            => 'Tøm lokasjon',
     'delete_all_selected_tags'                  => 'Delete all selected tags',

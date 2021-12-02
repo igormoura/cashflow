@@ -623,7 +623,7 @@ return [
     'without_date'                              => 'Tanpa tanggal',
     'result'                                    => 'Hasil',
     'sums_apply_to_range'                       => 'Semua jumlah berlaku untuk rentang yang dipilih',
-    'mapbox_api_key'                            => 'To use map, get an API key from <a href="https://www.mapbox.com/">Mapbox</a>. Open your <code>.env</code> file and enter this code after <code>MAPBOX_API_KEY=</code>.',
+    'mapbox_api_key'                            => 'To use map, get an API key from <a href="https://www.mapbox.com/">Mapbox</a>. Open your <code>.env.local</code> file and enter this code after <code>MAPBOX_API_KEY=</code>.',
     'press_object_location'                     => 'Right click or long press to set the object\'s location.',
     'clear_location'                            => 'Lokasi yang jelas',
     'delete_all_selected_tags'                  => 'Delete all selected tags',
